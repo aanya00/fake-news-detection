@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Fake News Detection</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Segoe UI", sans-serif;
+            display: flex;
+            background: black;
+        }
+
+        /* LEFT SIDE */
+        .left {
+            width: 50%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* RIGHT SIDE */
+        .right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #dde0d4fe;
+        }
+
+        .login-card {
+            width: 360px;
+            padding: 40px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #7f00ff, #b721ff);
+            box-shadow: 0 0 35px rgba(183,33,255,0.7);
+            color: white;
+        }
+
+        .login-card h1 {
+            margin: 0;
+            font-size: 28px;
+            line-height: 1.2;
+        }
+
+        .login-card p {
+            margin-top: 8px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .login-card input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 14px;
+        }
+
+        .login-card button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background: white;
+            color: rgb(238, 0, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- LEFT IMAGE -->
+<div class="left"
+     style="background-image: url('/static/images/news.png');">
+</div>
+
+<!-- RIGHT LOGIN -->
+<div class="right">
+    <div class="login-card">
+        <h1>HELLO!<br>Think twice.<br>Check once.</h1>
+        <p>Verify news before you trust it.</p>
+
+        <form method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Start</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
